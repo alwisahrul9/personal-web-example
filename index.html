@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hay!!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg nav">
+      <div class="container">
+        <h3 class="fw-semibold m-0">Example Portfolio</h3>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto align-items-center gap-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#section1">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section4">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-warning text-light btn-sm" onclick="themeMode()" id="themeBtn">Light Mode</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section1 container mt-4" id="section1">
+        <div class="row d-flex justify-content-between align-items-center h-100 pt-5 pb-5">
+          <div class="col-sm-8 desc">
+            <h2 class="fw-semibold">HI, I'am</h2>
+            <h1 class="fw-bolder">John Thor</h1>
+            <p class="fs-5"> A Management Specialist</p>
+            <button class="button" download>Resume</button>
+          </div>
+          <div class="col-sm-4 photo-profil">
+            <img src="aset/profile.jpg" alt="foto profil">
+          </div>
+        </div>
+        <div class="d-flex justify-content-center flex-column align-items-center">
+          <span class="fs-4">More</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+          </svg>
+        </div>
+      </section>
+
+
+      <section class="section2 container mt-5" id="section2">
+        <h1 class="fw-bold text-secondary">About</h1>
+        <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis in doloremque, tempore reprehenderit, exercitationem aliquid reiciendis quis architecto, hic ab neque repellendus? Reprehenderit vel, odit eos ut ullam quasi harum, officiis error tempora possimus consectetur, nostrum eum sed tempore sunt quas magni repellat dignissimos atque esse quam amet ipsum alias.</p>
+      </section>
+
+
+      <section class="section3 container mt-5" id="section3">
+        <h1 class="fw-bold text-secondary mb-4">Experience</h1>
+        <div class="p-sm-3 p-1">
+          <div class="slideDown">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <h5 class="fw-semibold">Sekretaris PT. XYZ</h5>
+              <button class="button" onclick="slideDown(event)">More Info</button>
+            </div>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sunt adipisci enim impedit repellendus illum tempora sint. Expedita laborum doloremque quisquam perferendis rerum sunt, commodi atque. Aliquam labore praesentium fugit quas temporibus, sapiente libero facilis porro aspernatur dolore dolor suscipit quam nostrum quasi, eos culpa minima earum consequatur aperiam omnis inventore consectetur? Blanditiis et laboriosam repudiandae placeat aspernatur? Eaque!</p>
+          </div>
+          <div class="slideDown">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <h5 class="fw-semibold">Bendahara PT. ABC</h5>
+              <button class="button" onclick="slideDown(event)">More Info</button>
+            </div>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sunt adipisci enim impedit repellendus illum tempora sint. Expedita laborum doloremque quisquam perferendis rerum sunt, commodi atque. Aliquam labore praesentium fugit quas temporibus, sapiente libero facilis porro aspernatur dolore dolor suscipit quam nostrum quasi, eos culpa minima earum consequatur aperiam omnis inventore consectetur? Blanditiis et laboriosam repudiandae placeat aspernatur? Eaque!</p>
+          </div>
+          <div class="slideDown">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <h5 class="fw-semibold">Staff PT. DEF</h5>
+              <button class="button" onclick="slideDown(event)">More Info</button>
+            </div>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sunt adipisci enim impedit repellendus illum tempora sint. Expedita laborum doloremque quisquam perferendis rerum sunt, commodi atque. Aliquam labore praesentium fugit quas temporibus, sapiente libero facilis porro aspernatur dolore dolor suscipit quam nostrum quasi, eos culpa minima earum consequatur aperiam omnis inventore consectetur? Blanditiis et laboriosam repudiandae placeat aspernatur? Eaque!</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section4 container mt-5 mb-5" id="section4">
+        <h1 class="fw-bold text-secondary mb-4">Contact</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-6 mb-5">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="aset/instagram.png" alt="instagram">
+                <p>@jhonthor</p>
+              </div>
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="aset/facebook.png" alt="instagram">
+                <p>John Thor</p>
+              </div>
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="aset/linkedin.png" alt="instagram">
+                <p>johnthor</p>
+              </div>
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="aset/twitter.png" alt="instagram">
+                <p>@jhonthor</p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6">
+              <form action="">
+                <p>Send me Email</p>
+                <label for="name" class="form-label mt-3">Your Name</label>
+                <input type="text" class="form-control bg-light mb-3" id="name" required placeholder="exp: Sarah">
+                <label for="text" class="form-label">Message</label>
+                <textarea name="" id="text" cols="30" rows="10" class="form-control bg-light mb-4" required placeholder="Enter Your Message"></textarea>
+                <div class="d-flex justify-content-end">
+                  <button class="btn btn-primary">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
